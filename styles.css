@@ -1,0 +1,65 @@
+.activity {
+  background-color: tomato;
+  color: white;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+  opacity: 0.8;
+}
+.journal {
+  background-color: #96D4D4;
+}
+table {
+  width: 100%;
+  text-align:left;
+  vertical-align: middle;
+}
+table tr {
+  border-bottom:1px solid black;
+}
+th, td {
+  padding:10px;
+}
+tr:hover {background-color: #D6EEEE;}
+table td:nth-child(1) { text-align: center; }
+.navbar-nav > li{
+  padding-left:30px;
+  padding-right:30px;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+.column {
+  float: left;
+  width: 15%;
+  padding: 2px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
