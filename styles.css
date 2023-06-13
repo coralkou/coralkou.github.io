@@ -68,3 +68,48 @@ table td:nth-child(1) { text-align: center; }
   clear: both;
   display: table;
 }
+
+/* CSS styles for the blog post */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.author {
+  font-style: italic;
+  margin-bottom: 5px;
+  text-align: right;
+}
+.date {
+  font-style: italic;
+  color: #888;
+  margin-bottom: 20px;
+  text-align: right;
+}
+.content {
+  line-height: 1.5;
+}
+/* CSS styles for colorful tags */
+.tag {
+  font-size: 12px;
+  display: inline-block;
+  padding: 8px 8px;
+  border-radius: 2px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.tag-red {
+  background-color: #ff0000;
+}
+
+.tag-blue {
+  background-color: #0000ff;
+}
+
+.tag-green {
+  background-color: #00ff00;
+}

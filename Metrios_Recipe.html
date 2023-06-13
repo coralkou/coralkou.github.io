@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html>
-<head><meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Windows_powershell</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <link rel = "stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Metrios_Recipe</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -6874,6 +6880,57 @@ button.bp3-menu-item{
   background:#30404d;
   color:#f5f8fa; }
 
+
+  .bp3-dark .bp3-menu-item.bp3-intent-warning{
+    color:#ffb366; }
+    .bp3-dark .bp3-menu-item.bp3-intent-warning .bp3-icon{
+      color:inherit; }
+    .bp3-dark .bp3-menu-item.bp3-intent-warning::before, .bp3-dark .bp3-menu-item.bp3-intent-warning::after,
+    .bp3-dark .bp3-menu-item.bp3-intent-warning .bp3-menu-item-label{
+      color:#ffb366; }
+    .bp3-dark .bp3-menu-item.bp3-intent-warning:hover, .bp3-dark .bp3-submenu .bp3-popover-target.bp3-popover-open > .bp3-intent-warning.bp3-menu-item, .bp3-submenu .bp3-dark .bp3-popover-target.bp3-popover-open > .bp3-intent-warning.bp3-menu-item, .bp3-dark .bp3-menu-item.bp3-intent-warning.bp3-active{
+      background-color:#d9822b; }
+    .bp3-dark .bp3-menu-item.bp3-intent-warning:active{
+      background-color:#bf7326; }
+    .bp3-dark .bp3-menu-item.bp3-intent-warning:hover, .bp3-dark .bp3-submenu .bp3-popover-target.bp3-popover-open > .bp3-intent-warning.bp3-menu-item, .bp3-submenu .bp3-dark .bp3-popover-target.bp3-popover-open > .bp3-intent-warning.bp3-menu-item, .bp3-dark .bp3-menu-item.bp3-intent-warning:hover::before, .bp3-dark .bp3-submenu .bp3-popover-target.bp3-popover-open > .bp3-intent-warning.bp3-menu-item::before, .bp3-submenu .bp3-dark .bp3-popover-target.bp3-popover-open > .bp3-intent-warning.bp3-menu-item::before, .bp3-dark .bp3-menu-item.bp3-intent-warning:hover::after, .bp3-dark .bp3-submenu .bp3-popover-target.bp3-popover-open > .bp3-intent-warning.bp3-menu-item::after, .bp3-submenu .bp3-dark .bp3-popover-target.bp3-popover-open > .bp3-intent-warning.bp3-menu-item::after,
+    .bp3-dark .bp3-menu-item.bp3-intent-warning:hover .bp3-menu-item-label,
+    .bp3-dark .bp3-submenu .bp3-popover-target.bp3-popover-open > .bp3-intent-warning.bp3-menu-item .bp3-menu-item-label,
+    .bp3-submenu .bp3-dark .bp3-popover-target.bp3-popover-open > .bp3-intent-warning.bp3-menu-item .bp3-menu-item-label, .bp3-dark .bp3-menu-item.bp3-intent-warning:active, .bp3-dark .bp3-menu-item.bp3-intent-warning:active::before, .bp3-dark .bp3-menu-item.bp3-intent-warning:active::after,
+    .bp3-dark .bp3-menu-item.bp3-intent-warning:active .bp3-menu-item-label, .bp3-dark .bp3-menu-item.bp3-intent-warning.bp3-active, .bp3-dark .bp3-menu-item.bp3-intent-warning.bp3-active::before, .bp3-dark .bp3-menu-item.bp3-intent-warning.bp3-active::after,
+    .bp3-dark .bp3-menu-item.bp3-intent-warning.bp3-active .bp3-menu-item-label{
+      color:#ffffff; }
+  .bp3-dark .bp3-menu-item.bp3-intent-danger{
+    color:#ff7373; }
+    .bp3-dark .bp3-menu-item.bp3-intent-danger .bp3-icon{
+      color:inherit; }
+    .bp3-dark .bp3-menu-item.bp3-intent-danger::before, .bp3-dark .bp3-menu-item.bp3-intent-danger::after,
+    .bp3-dark .bp3-menu-item.bp3-intent-danger .bp3-menu-item-label{
+      color:#ff7373; }
+    .bp3-dark .bp3-menu-item.bp3-intent-danger:hover, .bp3-dark .bp3-submenu .bp3-popover-target.bp3-popover-open > .bp3-intent-danger.bp3-menu-item, .bp3-submenu .bp3-dark .bp3-popover-target.bp3-popover-open > .bp3-intent-danger.bp3-menu-item, .bp3-dark .bp3-menu-item.bp3-intent-danger.bp3-active{
+      background-color:#db3737; }
+    .bp3-dark .bp3-menu-item.bp3-intent-danger:active{
+      background-color:#c23030; }
+    .bp3-dark .bp3-menu-item.bp3-intent-danger:hover, .bp3-dark .bp3-submenu .bp3-popover-target.bp3-popover-open > .bp3-intent-danger.bp3-menu-item, .bp3-submenu .bp3-dark .bp3-popover-target.bp3-popover-open > .bp3-intent-danger.bp3-menu-item, .bp3-dark .bp3-menu-item.bp3-intent-danger:hover::before, .bp3-dark .bp3-submenu .bp3-popover-target.bp3-popover-open > .bp3-intent-danger.bp3-menu-item::before, .bp3-submenu .bp3-dark .bp3-popover-target.bp3-popover-open > .bp3-intent-danger.bp3-menu-item::before, .bp3-dark .bp3-menu-item.bp3-intent-danger:hover::after, .bp3-dark .bp3-submenu .bp3-popover-target.bp3-popover-open > .bp3-intent-danger.bp3-menu-item::after, .bp3-submenu .bp3-dark .bp3-popover-target.bp3-popover-open > .bp3-intent-danger.bp3-menu-item::after,
+    .bp3-dark .bp3-menu-item.bp3-intent-danger:hover .bp3-menu-item-label,
+    .bp3-dark .bp3-submenu .bp3-popover-target.bp3-popover-open > .bp3-intent-danger.bp3-menu-item .bp3-menu-item-label,
+    .bp3-submenu .bp3-dark .bp3-popover-target.bp3-popover-open > .bp3-intent-danger.bp3-menu-item .bp3-menu-item-label, .bp3-dark .bp3-menu-item.bp3-intent-danger:active, .bp3-dark .bp3-menu-item.bp3-intent-danger:active::before, .bp3-dark .bp3-menu-item.bp3-intent-danger:active::after,
+    .bp3-dark .bp3-menu-item.bp3-intent-danger:active .bp3-menu-item-label, .bp3-dark .bp3-menu-item.bp3-intent-danger.bp3-active, .bp3-dark .bp3-menu-item.bp3-intent-danger.bp3-active::before, .bp3-dark .bp3-menu-item.bp3-intent-danger.bp3-active::after,
+    .bp3-dark .bp3-menu-item.bp3-intent-danger.bp3-active .bp3-menu-item-label{
+      color:#ffffff; }
+  .bp3-dark .bp3-menu-item::before,
+  .bp3-dark .bp3-menu-item > .bp3-icon{
+    color:#a7b6c2; }
+  .bp3-dark .bp3-menu-item .bp3-menu-item-label{
+    color:#a7b6c2; }
+  .bp3-dark .bp3-menu-item.bp3-active, .bp3-dark .bp3-menu-item:active{
+    background-color:rgba(138, 155, 168, 0.3); }
+  .bp3-dark .bp3-menu-item.bp3-disabled{
+    color:rgba(167, 182, 194, 0.6) !important; }
+    .bp3-dark .bp3-menu-item.bp3-disabled::before,
+    .bp3-dark .bp3-menu-item.bp3-disabled > .bp3-icon,
+    .bp3-dark .bp3-menu-item.bp3-disabled .bp3-menu-item-label{
+      color:rgba(167, 182, 194, 0.6) !important; }
+
 .bp3-dark .bp3-menu-divider,
 .bp3-dark .bp3-menu-header{
   border-color:rgba(255, 255, 255, 0.15); }
@@ -10288,20 +10345,6 @@ input::placeholder {
   padding: 6px;
 }
 
-.jp-HTMLSelect.jp-DefaultStyle select {
-  background-color: initial;
-  border: none;
-  border-radius: 0;
-  box-shadow: none;
-  color: var(--jp-ui-font-color0);
-  display: block;
-  font-size: var(--jp-ui-font-size1);
-  height: 24px;
-  line-height: 14px;
-  padding: 0 25px 0 10px;
-  text-align: left;
-}
-
 /* Use our own theme for hover and option styles */
 .jp-HTMLSelect.jp-DefaultStyle select:hover,
 .jp-HTMLSelect.jp-DefaultStyle select > option {
@@ -11464,7 +11507,6 @@ body.lm-mod-override-cursor * {
   background-color: #f7f7f7;
   white-space: nowrap;
 }
-
 .CodeMirror-linenumber {
   padding: 0 3px 0 5px;
   min-width: 20px;
@@ -11524,7 +11566,6 @@ body.lm-mod-override-cursor * {
   50% { background-color: transparent; }
   100% {}
 }
-
 
 .cm-tab { display: inline-block; text-decoration: inherit; }
 
@@ -11705,6 +11746,7 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {color: #a22;}
   z-index: 2;
   padding: 0.1px; /* Force widget margins to stay inside of the container */
 }
+
 
 .CodeMirror-rtl pre { direction: rtl; }
 
@@ -12562,7 +12604,6 @@ span.CodeMirror-selectedtext { background: none; }
 }
 /* ...or leave it untouched if they don't */
 
-
 .jp-RenderedHTMLCommon img,
 .jp-RenderedImage img,
 .jp-RenderedHTMLCommon svg,
@@ -13003,10 +13044,6 @@ h6:hover .jp-InternalAnchorLink {
 /*-----------------------------------------------------------------------------
 | Copyright (c) Jupyter Development Team.
 | Distributed under the terms of the Modified BSD License.
-|----------------------------------------------------------------------------*/
-
-/*-----------------------------------------------------------------------------
-| Private CSS variables
 |----------------------------------------------------------------------------*/
 
 
@@ -14323,6 +14360,7 @@ all of MD as it is not optimized for dense, information rich UIs.
 
 <style type="text/css">
 
+
 /* Misc */
 a.anchor-link {
   display: none;
@@ -14436,13 +14474,13 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
     </script>
     <!-- End of mathjax configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
-  <img src="image/Windows_powershell.png" width="300">
+  <img src="image/thermo.png" width="300">
   <div class="container">
-    <h1>Super Fast Windows file management through Powershell</h1>
+    <h1>Semi-auto TEM recipe for best data quality and efficiency</h1>
     <div class="author">Author: Carol Kou</div>
     <div class="date">
-        Created: Feb 27th, 2023<br>
-        Published: June 8, 2023
+        Created: July 1, 2020<br>
+        Published: June 13, 2023
     </div>
 </div>
 <br>
@@ -14453,163 +14491,48 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="1.-Introduction">1. Introduction<a class="anchor-link" href="#1.-Introduction">&#182;</a></h2><p> When performing TEM analysis, all my data are generated and coarsely analyzed on on-site computers, while exported into my local computer for deep analysis. The raw data folders could be really big containing raw data files which can only be recognized by the licensed vendor software, middle product of analysis, which are mainly images, and supporting files like excel sheets and csv files.</p><ul>There are several operations that I have to use daily but laborious to do by hand:
-    <li>Batch renaming files in nested folder structure</li>
-    <li>Batch editting images in selected subdirectory</li>
-    <li>Deleting files in nested folder structure</li>
-    <li>Copying only useful files in nested folder structure</li>
-</ul><p> Take renaming for example, the auto generated images from vendor software may have a regid rule of naming which doesn't suit my need. If it is for elemental analysis, each folder may has tens of map files with name like "XXXXX_Au_XXXXX.tif", while you just need "Au.tif". Scripting will go into these elemental map folders and help you rename all of the map fils by a sigle click "Run". Such a life saver!</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="2.-My-example">2. My example<a class="anchor-link" href="#2.-My-example">&#182;</a></h2><pre>Below is the scope of work I needed to run, and my basic folder structure is shown below:
-    -root\job_folder
-        -SiteList.csv
-        -sample1_folder
-            -sample1_image1.tif
-            -...
-            -sample1_image10.tif
-            -map1_folder
-                -1-Au-wt.tif
-                -1-Cr-wt.tif
-                -...
-                -1-Pt-wt.tif                
-            -map2_folder
-                -1-Au-net.tif
-                -1-Cr-net.tif
-                -...
-                -1-Pt-net.tif  
-        -sample2_folder
-            -...
-        -...
-        -sample12_folder
-</pre><p>My script is consisted of 4 steps:</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="Step1:-Set-the-work-path.-In-my-example,-my-job-number-for-the-work-is-%22FR2304-0005%22.">Step1: Set the work path. In my example, my job number for the work is "FR2304-0005".<a class="anchor-link" href="#Step1:-Set-the-work-path.-In-my-example,-my-job-number-for-the-work-is-%22FR2304-0005%22.">&#182;</a></h4><div class="highlight"><pre><span></span><span class="cp">#Paste in the job direction</span>
-<span class="n">$path</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;</span><span class="se">\\</span><span class="s">....\...\FR2304-0005&quot;</span><span class="w"></span>
-<span class="cp">#Get job number. Change the index if the path is differnt in format.</span>
-<span class="n">$jobnumber</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">$path</span><span class="p">.</span><span class="n">split</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\&quot;</span><span class="s">)[-1]</span>
-<span class="n">Set</span><span class="o">-</span><span class="n">Location</span><span class="w"> </span><span class="n">$path</span><span class="w"></span>
-</pre></div>
+<blockquote><h2 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">&#182;</a></h2>
+</blockquote>
+<p>&emsp;&emsp;I started my career as a TEM engineer in hardware industry. At the begining, 80% of my working hours are devoted to data collection in the dark, cold TEM room. With the development of modern TEM tools, the data acquisition time is greatly reduced to only 10% of time due to several reasons:</p>
 
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="Step-2:-Rename-all-elemtal-map-files.-For-example,-if-it-is-%221-Au-wt.tif%22,-I'd-like-to-change-it-to-%22Au.tif%22.">Step 2: Rename all elemtal map files. For example, if it is "1-Au-wt.tif", I'd like to change it to "Au.tif".<a class="anchor-link" href="#Step-2:-Rename-all-elemtal-map-files.-For-example,-if-it-is-%221-Au-wt.tif%22,-I'd-like-to-change-it-to-%22Au.tif%22.">&#182;</a></h4><div class="highlight"><pre><span></span><span class="cp">#Rename all elemental maps</span>
-<span class="n">Get</span><span class="o">-</span><span class="n">ChildItem</span><span class="w"> </span><span class="o">-</span><span class="n">recurse</span><span class="w"> </span><span class="o">-</span><span class="n">name</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">ForEach</span><span class="o">-</span><span class="n">Object</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">Move</span><span class="o">-</span><span class="n">Item</span><span class="w"> </span><span class="n">$_</span><span class="w"> </span><span class="n">$_</span><span class="p">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&quot;1-&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
-<span class="n">Get</span><span class="o">-</span><span class="n">ChildItem</span><span class="w"> </span><span class="o">-</span><span class="n">recurse</span><span class="w"> </span><span class="o">-</span><span class="n">name</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">ForEach</span><span class="o">-</span><span class="n">Object</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">Move</span><span class="o">-</span><span class="n">Item</span><span class="w"> </span><span class="n">$_</span><span class="w"> </span><span class="n">$_</span><span class="p">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&quot;-wt&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
-<span class="n">Get</span><span class="o">-</span><span class="n">ChildItem</span><span class="w"> </span><span class="o">-</span><span class="n">recurse</span><span class="w"> </span><span class="o">-</span><span class="n">name</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">ForEach</span><span class="o">-</span><span class="n">Object</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">Move</span><span class="o">-</span><span class="n">Item</span><span class="w"> </span><span class="n">$_</span><span class="w"> </span><span class="n">$_</span><span class="p">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&quot;-net&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
-</pre></div>
+<pre><code>1. The tools are build much more stable thus the need for time consuming alignment is eliminated.
+2. Pre-customized auto functions to perform combo operations by a single click.
+3. The recipe editor that enable running recipes to control the sample stage, beam, input variables and output files.
 
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="Step-3:-Flip-images-if-needed">Step 3: Flip images if needed<a class="anchor-link" href="#Step-3:-Flip-images-if-needed">&#182;</a></h4><p> I have a SiteList.csv file created by TEM tool when running the recipe to acquire data. In that .csv file, 
-    I found there is a inconvinience to flip the images in subfolders without flipping the images in folder. Also, for this script, only the '.tif' files are affected.</p><div class="highlight"><pre><span></span><span class="cp">#Read the .csv file and check if there is any images needs to be flipped</span>
-<span class="n">$P</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Import</span><span class="o">-</span><span class="n">Csv</span><span class="w"> </span><span class="o">-</span><span class="n">Path</span><span class="w"> </span><span class="p">.</span><span class="err">\</span><span class="n">SiteList</span><span class="p">.</span><span class="n">csv</span><span class="w"></span>
-<span class="p">[</span><span class="n">System</span><span class="p">.</span><span class="n">Reflection</span><span class="p">.</span><span class="n">Assembly</span><span class="p">]</span><span class="o">::</span><span class="n">LoadWithPartialName</span><span class="p">(</span><span class="s">&quot;System.Drawing&quot;</span><span class="p">)</span><span class="w"></span>
-<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">$i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">$i</span><span class="w"> </span><span class="o">-</span><span class="n">le</span><span class="w"> </span><span class="mi">12</span><span class="p">;</span><span class="w"> </span><span class="n">$i</span><span class="o">++</span><span class="p">){</span><span class="w"></span>
-<span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">$P</span><span class="p">.</span><span class="n">Flipped</span><span class="p">[</span><span class="n">$i</span><span class="p">]</span><span class="w"> </span><span class="o">-</span><span class="n">eq</span><span class="w"> </span><span class="s">&quot;True&quot;</span><span class="p">){</span><span class="w"></span>
-<span class="w">    </span><span class="n">$sub</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">$path</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;</span><span class="se">\&quot;</span><span class="s"> + $P.SampleID[$i]</span>
-<span class="w">    </span><span class="n">$sample</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">$P</span><span class="p">.</span><span class="n">SampleID</span><span class="p">[</span><span class="n">$i</span><span class="p">]</span><span class="w"></span>
-<span class="w">    </span><span class="cp">#Flip all images first and flip back images not in subfolders</span>
-<span class="w">    </span><span class="n">Get</span><span class="o">-</span><span class="n">ChildItem</span><span class="w"> </span><span class="o">-</span><span class="n">recurse</span><span class="w"> </span><span class="p">(</span><span class="n">$sub</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="n">include</span><span class="w"> </span><span class="err">@</span><span class="p">(</span><span class="s">&quot;*.tif&quot;</span><span class="p">)</span><span class="w"> </span><span class="o">|</span><span class="w"></span>
-<span class="w">    </span><span class="n">ForEach</span><span class="o">-</span><span class="n">Object</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="n">$image</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="n">System</span><span class="p">.</span><span class="n">Drawing</span><span class="p">.</span><span class="n">image</span><span class="p">]</span><span class="o">::</span><span class="n">FromFile</span><span class="p">(</span><span class="w"> </span><span class="n">$_</span><span class="w"> </span><span class="p">)</span><span class="w"></span>
-<span class="w">        </span><span class="n">$image</span><span class="p">.</span><span class="n">rotateflip</span><span class="p">(</span><span class="s">&quot;RotateNoneFlipY&quot;</span><span class="p">)</span><span class="w"></span>
-<span class="w">        </span><span class="n">$image</span><span class="p">.</span><span class="n">save</span><span class="p">(</span><span class="n">$_</span><span class="p">)</span><span class="w"></span>
-<span class="w">    </span><span class="p">}</span><span class="w"></span>
-<span class="w">    </span><span class="n">Get</span><span class="o">-</span><span class="n">ChildItem</span><span class="w"> </span><span class="p">(</span><span class="n">$sub</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="n">include</span><span class="w"> </span><span class="err">@</span><span class="p">(</span><span class="s">&quot;$sample*&quot;</span><span class="p">)</span><span class="o">|</span><span class="w"></span>
-<span class="w">    </span><span class="n">ForEach</span><span class="o">-</span><span class="n">Object</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="n">$image</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="n">System</span><span class="p">.</span><span class="n">Drawing</span><span class="p">.</span><span class="n">image</span><span class="p">]</span><span class="o">::</span><span class="n">FromFile</span><span class="p">(</span><span class="w"> </span><span class="n">$_</span><span class="w"> </span><span class="p">)</span><span class="w"></span>
-<span class="w">        </span><span class="n">$image</span><span class="p">.</span><span class="n">rotateflip</span><span class="p">(</span><span class="s">&quot;RotateNoneFlipY&quot;</span><span class="p">)</span><span class="w"></span>
-<span class="w">        </span><span class="n">$image</span><span class="p">.</span><span class="n">save</span><span class="p">(</span><span class="n">$_</span><span class="p">)</span><span class="w"></span>
-<span class="w">    </span><span class="p">}</span><span class="w"></span>
-<span class="w"> </span><span class="p">}</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
-</pre></div>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="Step-4:-Remove-useless-data">Step 4: Remove useless data<a class="anchor-link" href="#Step-4:-Remove-useless-data">&#182;</a></h4><p> For compositional analysis, there are some elements that are included solely to help deconvolute signals. As most of the TEM samples are placed on Cu grid, Cu is usually selected for devonvolution purpose only. Therefore, we need a single line of code to remove all "<b>Cu.tif</b>" files.</p><div class="highlight"><pre><span></span><span class="n">Get</span><span class="o">-</span><span class="n">ChildItem</span><span class="w"> </span><span class="p">(</span><span class="n">$path</span><span class="p">)</span><span class="w">  </span><span class="n">Cu</span><span class="p">.</span><span class="n">tif</span><span class="w"> </span><span class="o">-</span><span class="n">Recurse</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Remove</span><span class="o">-</span><span class="n">Item</span><span class="w"></span>
-</pre></div>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="Step-5:-Copy-selected-files-into-destination-while-maintaining-folder-structure">Step 5: Copy selected files into destination while maintaining folder structure<a class="anchor-link" href="#Step-5:-Copy-selected-files-into-destination-while-maintaining-folder-structure">&#182;</a></h4><p>The raw data file is now well trimed and ready for export. However, the raw data files will bacome useless on other computers, so we'd like to skip them. Instead of using `ctrl + left click`to manually select files to move and repeating the same operation for each subfolders, we can use <b>ROBOCOPY</b>.</p><div class="highlight"><pre><span></span><span class="cp">#Setup the desination folder directory</span>
-<span class="n">$des_path</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="err">&#39;\\</span><span class="p">....</span><span class="err">\</span><span class="p">...</span><span class="err">\&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">$jobnumber</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="err">&#39;\</span><span class="n">TEM</span><span class="err">&#39;</span><span class="w"></span>
-<span class="cp">#Only copy the image files</span>
-<span class="n">ROBOCOPY</span><span class="w"> </span><span class="n">$path</span><span class="w"> </span><span class="n">$des_path</span><span class="w"> </span><span class="o">*</span><span class="p">.</span><span class="n">tif</span><span class="w"> </span><span class="o">*</span><span class="p">.</span><span class="n">jpg</span><span class="w"> </span><span class="o">*</span><span class="p">.</span><span class="n">png</span><span class="w"> </span><span class="o">/</span><span class="n">e</span><span class="w"></span>
-</pre></div>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h>Enjoy scripting!</h>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><sup>Note: I use Powershell version 5.1. Previous versions may not fully work with this script, especially the image flip section. To check your own Powshell version, type `$PSVersionTable` in your powshell command line. The Value for PSVersion would tell.</sup></p>
+</code></pre>
+<p>&emsp;&emsp;The 3rd item is what I'd like to expand into details today. Although technically, the recipe editor allows users to run data acquisition fully automated without supervision thanks to the development of computer vision, under a research environment, I found it more ideal to create recipes that are semi=automatic. Such recipes can take advantage of both fast machine controls and quick judgement from experienced engineers.</p>
+<blockquote><h2 id="Recipe-Overview">Recipe Overview<a class="anchor-link" href="#Recipe-Overview">&#182;</a></h2>
+</blockquote>
+<p>&emsp;&emsp;The recipe is divided into 4 major block:</p>
+<p><img src='image/Recipe_chart.png' alt="Recipe blocks"></p>
+<ul>
+<li>The #1 block is to initialize the job and import variables.</li>
+<li>The #2 block is for TEM imaging.</li>
+<li>The #3 block is for transitioning into STEM mode.</li>
+<li>The #4 block is for STEM imaging and EDX mapping. </li>
+</ul>
+<blockquote><h2 id="The-intial-block">The intial block<a class="anchor-link" href="#The-intial-block">&#182;</a></h2>
+</blockquote>
+<p><img src='image/Initial_block.png' alt="Initial block"></p>
+<p>&emsp;&emsp;Before running the recipe, I need to have a <font color='blue'>.csv</font> file ready with a single column of all sample names of the loaded grid. The recipe will ask for the jobID, number of samples to run and which .csv file to load. The jobID will be used to set the working directory. The number of samples is needed to figure out how many iterations to run when taking results.</p>
+<p>&emsp;&emsp;The 2nd part of the initial block is to reset the tool to ensure a zero offset start.</p>
+<p>&emsp;&emsp;Although the Recipe Editor has the capability to locate each samples from low mag mode, accurate search of sample coordinate with correct focus and tilt takes too long to optimize automatically. Instead, I save all sample locations at this step in the stage nativagation panel with rough accuracy and manually locate features on each sample later.</p>
+<blockquote><h2 id="The-TEM-imaging-block">The TEM imaging block<a class="anchor-link" href="#The-TEM-imaging-block">&#182;</a></h2>
+</blockquote>
+<p><img src='image/TEM_ifelse.png' alt="TEM block"></p>
+<p>&emsp;&emsp;This block itself is an iteration through all samples on the grid. For each sample, reset the defocus, manually find the sample feature at highest imaging magnification and start taking the whole set of images. The first <font color='green'>ifelse</font> section is used to take images at differnt magnifications, and how to shift the beam for each image is determined by whether the sample has been placed upside down or not. The second <font color='green'>ifelse</font> section is used to take additionally images if necessary.</p>
+<blockquote><h2 id="The-transition-block">The transition block<a class="anchor-link" href="#The-transition-block">&#182;</a></h2>
+</blockquote>
+<p><img src='image/Transition_block.png' alt="Transition block"></p>
+<p>&emsp;&emsp;This section mainly prompts the user to load STEM registration file and automatically check if Camera length and constrast are consistent. In the previous section, the accurate coordinates:(<i>x, y, z, Alpha, Beta</i>) are saved in a new <font color='blue'>.csv</font> file, so we will be able to image each sample in STEM mode faster.</p>
+<blockquote><h2 id="The-STEM-block">The STEM block<a class="anchor-link" href="#The-STEM-block">&#182;</a></h2>
+</blockquote>
+<p><img src='image/STEM_block.png' alt="STEM block"></p>
+<p>&emsp;&emsp;STEM block is used to go through all samples on the grid one more time in the STEM mode. We can take dark field images and add EDS maps. The <font color='green'>ifelse</font> condition is to ask whether to run this section with full automation or still under supervision. Becasue sample tilt has been optimized in the previous TEM section, so locating feature though pattern recognization is workable here. However, any operation involves fine features and auto pattern recognization has to go through a casacade of magnifications, so most of the time, manual intervention is adopted. Similar to taking TEM images, taking STEM images also consists of reset beam shift, change magnification, acquire image and save image. Automap can also be used if the user decided to acquire maps automatically when the samples and the training image are alike.</p>
+<p><img src='image/Auto_STEM.png' alt="Auto imaging and map"></p>
+<blockquote><h2 id="Conclusion">Conclusion<a class="anchor-link" href="#Conclusion">&#182;</a></h2>
+</blockquote>
+<p>&emsp;&emsp;With the popularity of remote office and flexible working schedule, this technology enables TEM engineers and scholars to have more versatile work style, save previous brain power for more challenging work and minimize idle tool times. From this article, we learned that the actual implementation doesn't have to be completely automatic. Imperical experient taught me that full auto runs take longer time to run, and are susceptible to error interuption and poor data quality. Alternatively, the combination of human intevention and automation could be quite efficient, especially in a research environment when training images could easily obsolete. I would like to encourgage more and more TEM engineers to try such recipe techniques, embrace the beauty of "smart" working, and spend more time into other frontier subjects such as computer vision and deep learning.</p>
 
 </div>
 </div>

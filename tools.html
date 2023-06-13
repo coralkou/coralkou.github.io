@@ -1,29 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <link href="styles.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="description" content="Archive for personal use">
+    <meta name="keywords" content="learning, websites, links">
+    <meta name="author" content="Carol Kou">
     <title>Tools</title>
 </head>
 <body>
-<h1>Websites that I am currently keeping at hand</h1>
-<ul>
-    <li>
-        <a href = "https://ingeh.medium.com/markdown-for-jupyter-notebooks-cheatsheet-386c05aeebed#:~:text=Bullets%3A%20Use%20the%20dash%20sign,Numbered%20lists%3A%20Start%20with%201.">Jupyter notebook cheatsheet</a>
-    </li>
-    <li>
-        <a href = "https://www.blogger.com/blog/posts/1456071567960072266">My blogger</a>
-    </li>
-    <li>
-        <a href="https://pytorch.org/tutorials/intermediate/flask_rest_api_tutorial.html">Deploying Pytorch with Flask</a>
-    </li>
-    <li>
-        <a href="https://www.sqlite.org/cli.html#:~:text=Start%20the%20sqlite3%20program%20by,name%20will%20be%20created%20automatically.">Sqlite command line</a>
-    </li>
-    <li>
-        <a href="https://stackoverflow.com/questions/12502187/how-to-export-an-ipython-notebook-to-html-for-a-blog-post">Export notebook to blog post</a>
-    </li>
-    <li>
-        <a href="https://bdp-heads-web.edge.wdc.com/?SiteList=%5B%22THO%22%5D&ToolTypeList=%5B%22DLCX%22%5D">BDP-IAS</a>
-    </li>
-</ul>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="index.html">Homepage</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href = "resume.html">Resume</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href = "projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href = "blog.html">Blog</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href = "tools.html">Misc</a>
+            </li>
+        </ul>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="list-group">
+              <h5 class="list-group-item list-group-item-primary">Websites that I am currently keeping at hand</h5>
+              <a href="https://ingeh.medium.com/markdown-for-jupyter-notebooks-cheatsheet-386c05aeebed#:~:text=Bullets%3A%20Use%20the%20dash%20sign,Numbered%20lists%3A%20Start%20with%201." class="list-group-item list-group-item-action">Jupyter notebook cheatsheet</a>
+              <a href="https://www.blogger.com/blog/posts/1456071567960072266" class="list-group-item list-group-item-action">My blogger</a>
+              <a href="https://pytorch.org/tutorials/intermediate/flask_rest_api_tutorial.html" class="list-group-item list-group-item-action">Deploying Pytorch with Flask</a>
+              <a href="https://www.sqlite.org/cli.html#:~:text=Start%20the%20sqlite3%20program%20by,name%20will%20be%20created%20automatically." class="list-group-item list-group-item-action">Sqlite command line</a>
+              <a href="https://nbconvert.readthedocs.io/en/latest/usage.html" class="list-group-item list-group-item-action">Convert notebook to html</a>
+              <a href="https://bdp-heads-web.edge.wdc.com/?SiteList=%5B%22THO%22%5D&ToolTypeList=%5B%22DLCX%22%5D" class="list-group-item list-group-item-action">BDP-IAS</a>
+              <a href="#" class="list-group-item list-group-item-action">Link 5</a>
+              <h5 class="list-group-item list-group-item-primary">Documentary that are interesting to watch</h5>
+              <a href="http://www.dimensions-math.org/Dim_regarder_E.htm" class="list-group-item list-group-item-action">Dimensions: A walk through mathimatics</a>
+              <a href="https://positivepsychology.com/positive-psychology-ted-talks/#martin" class="list-group-item list-group-item-action">Positive Psychology</a>
+              <a href="https://www.history.com/shows/men-who-built-america" class="list-group-item list-group-item-action">The men who built America</a>
+              <a href="#" class="list-group-item list-group-item-action">Link 5</a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
 </body>
 </html>
