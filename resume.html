@@ -11,6 +11,54 @@
         <meta name="keywords" content="Resume, Skills, Education, Work, Experience, Projects, Courses">
         <meta name="author" content="Carol Kou">
         <title>Resume</title>
+        <style>
+            body {
+              font-family: Arial, sans-serif;
+              margin: 0;
+              padding: 1;
+            }
+            
+            header {
+              background-color: #6495ED;
+              color: #fff;
+              padding: 20px;
+              text-align: center;
+            }
+            
+            .container {
+              max-width: 960px;
+              margin: 0 auto;
+              padding: 20px;
+              display: flex;
+            }
+            
+            .left-column {
+              flex-basis: 25%;
+              padding-right: 10px;
+              text-align: right;
+            }
+            
+            .right-column {
+              flex-basis: 75%;
+              padding-left: 10px;
+            }
+        
+            .separation-line {
+            width: 1px;
+            background-color: #181717;
+            }
+            
+            @media (max-width: 767px) {
+              .container {
+                flex-direction: column;
+              }
+              
+              .left-column, .right-column {
+                flex-basis: 100%;
+                padding-right: 0;
+              }
+            }
+          </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -37,8 +85,95 @@
         </ul>
         </div>
     </nav>
+
+    <header>
+        <h1><u>Xiaolu 'Carol' Kou</u></h1>
+        <h2>Software Developer</h2>
+    </header>
+      
+    <div class="container">
+        <div class="left-column">
+            <h2>CONTACT</h2>
+            <pre style="font-size:16px;font-family: Arial, sans-serif;">xiaolu.kou@ucla.edu <img src="icons/email.png"  width="15">
+              (310)-994-3385 <img src="icons/smartphone.png"  width="15">
+              San Jose, CA <img src="icons/location.png"  width="15">
+              <a href='http://coralkou.github.io'>Github page </a><img src="icons/github.png"  width="15">
+              <a href='http://www.linkedin.com/in/xiaolu-carol-kou-05519334'> linkedin </a><img src="icons/linkedin.png"  width="15">
+              <a href='https://leetcode.com/CarolKOU/'>Leetcode </a><img src="icons/leetcode.png"  width="15">
+            </pre>
+          
+            <h2 >OBJECTIVE</h2>
+            <p style="font-size:14px;font-family:Verdana;">As a senior member of an engineering group, I have personally witnessed the productivity boost by taking lead or involved in various software developments. Eager to apply my strong problem-solving abilities, attention to detail, and collaboration skills to create impactful and innovative software solutions.</p>
     
-<h1>Carol's resume</h1>
-<p>A traditional resume format with hypertext options</p>
+    
+            <h2>EDUCATION</h2>
+            <pre style="font-size:14px;font-family:Verdana;"><b>Ph.D.</b> and <b>M.S.</b>
+               Material Sci. & Eng.
+               UCLA, 2014
+               Los Angeles, CA
+            </pre>
+            <br>
+            <pre style="font-size:14px;font-family:Verdana;"><b>B.S.</b>
+               Electrical Engineering
+               Nankai Univ., 2009
+               Tianjin, China
+            </pre>
+    
+            <h2>SKILLS</h2>
+            <p><b>Language</b>: Python, SQL, R, HTML,JavaScript, Java</p>
+            <p><b>Framework</b>: PyTorch, Flask, Bootstrap</p>
+    
+            <h2>CERTIFICATES</h2>
+            <pre style="font-size:16px;font-family: Arial, sans-serif;"><b>Harvard CS50,</b>
+                in progress
+            </pre>
+            <pre style="font-size:16px;font-family: Arial, sans-serif;"><b>Stanford Algorithms,</b>
+                Coursera (2021)
+            </pre>
+            <pre style="font-size:16px;font-family: Arial, sans-serif;"><b>Data Mining and App.,</b>
+                Stanford (2022)
+            </pre>
+            <pre style="font-size:16px;font-family: Arial, sans-serif;"><b>Six Sigma Brown Belt,</b>
+                Seagate (2015)
+            </pre>
+        </div>
+
+        <div class="separation-line"></div>
+        
+        <div class="right-column">
+            <h2>WORK EXPERIENCE</h2>
+
+            <h3><u>Technologist</u></h3>
+            <h3>Western Digital <img src="icons/WD.png"  width="25"></h3>
+            <p>Nov 2017 &#45 current / Fremont, CA</p>
+            <ul>
+                <li>Developed work report automation in JMP, R and Python respectively by querying lab data from SQL database</li>
+                <li>Worked with internal data engineers to upload local image data and parsed metadata to company-wide Big Data Platform consists of AWS S3, PostgreSQL and a RESTful API for reliable fast search and machine learning projects</li>
+                <li>Automated daily workflow which includes data acquisition, data analyze and data reporting to increase the productivity of advanced physical failure analysis by >100%</li>
+                <li>Accelerated R&D learnings of FA results by machine learning using PyTorch</li>
+            </ul>
+            <br>
+            <h3><u>Sr. Engineer</u></h3>
+            <h3>Seagate Technology <img src="icons/Seagate.png"  width="25"></h3>
+            <p>Feb 2015 &#45 Nov 2017 / Bloomington, MN</p>
+            <ul>
+                <li>Continuously improved device reliability by applying state-of-art FA tool and offering expert opinion on failure root causes</li>
+                <li>Collaborated with IT on the development of in-house lab request system, which enables auto work report generation and customer access to job progress</li>
+                <li>Led a Six Sigma project to screen out high error devices at wafer level several months before traditional tests on full build device</li>
+                <li>Coordinated lab resource to increase lab capacity by 30% and reduced turnaround time of complicated analysis jobs from 3+ weeks to &lt 1 week</li>
+            </ul>
+            <br>
+            <h2>PROJECTS</h2>
+    
+            <h3><u>Stock Transaction, a web app</u></h3>
+            <p>Dec 2022 &#45 Mar 2023/ CS50 course project</p>
+            <ul>
+                <li>Obtained stock quotes through IEX with token</li>
+                <li>Created a SQL database with multiple schemas for user info, transaction info and stock inventory</li>
+                <li>Created RESTful APIs with Flask to achieve functions such as user register, login and stock transactions</li>
+                <li>Written the webpages with HTML/CSS</li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
