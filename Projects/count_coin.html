@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+            
+                document.querySelector('form').onsubmit = () => {
+                    //Clear previous results
+                    document.getElementById('results').innerHTML = '';
+                    //Get the total number of cents
+                    let total = document.querySelector('#total').value;
+                    //Start calculate the result
+                    const results = [];
+                    let rest = total;
+                    
+                    while (true) {
+                        if (rest % 5 !== 0) {
+                            break;
+                            }
+                        while (rest >= 0) {
+                            const temp = rest;
+                            const quarter = Math.floor(rest / 25);
+                            rest = total - 25 * quarter;
+                            while (rest >= 0) {
+                                const keep = rest;
+                                const dim = Math.floor(rest / 10);
+                                const nickle = total - dim * 10 - quarter * 25;
+                                results.push([quarter, dim, nickle]);
+                                rest = keep - 10;
+                            }
+                            rest = temp - 25;
+                        }
+                        break;
+                    }
+
+
+                    //Title for result printing:
+                    document.querySelector('h2').innerHTML = "To make " + total + " cents using 25, 10, 5, there are " + results.length +" ways:";
+
+                    //Start display the result
+                    for (let i = 0; i < results.length; i++){
+                        // Create new item for list
+                        const li = document.createElement('li');
+                        li.innerHTML = "Use " + results[i][0] + " quarters " + results[i][1] + " dimes " + results[i][2] + " nickles";
+                        // Add new item to task list
+                        document.querySelector('#results').append(li);
+                    };                  
+
+                    // Clear input field
+                    document.querySelector('#total').value = '';
+
+                    // Stop form from submitting
+                    return false;
+                };
+
+            });
+        </script>
+        <title>Counting coins</title>
+    </head>
+    <body>
+        <h1>Enter total money in cents</h1>
+        <form>
+            <input id="total" autocomplete="off" autofocus placeholder="Total cents" type="number">
+            <input type="submit">
+        </form>
+        <h2></h2>
+        <ol id="results">
+        </ol>
+    </body>
+</html>
