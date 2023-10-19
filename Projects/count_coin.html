@@ -24,7 +24,7 @@
                             while (rest >= 0) {
                                 const keep = rest;
                                 const dim = Math.floor(rest / 10);
-                                const nickle = total - dim * 10 - quarter * 25;
+                                const nickle = Math.floor((total - dim * 10 - quarter * 25)/5);
                                 results.push([quarter, dim, nickle]);
                                 rest = keep - 10;
                             }
