@@ -9,6 +9,9 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Don't step on mine</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
     <style>
         .custom-container {
             display: flex;
@@ -75,6 +78,23 @@
                 title: `Please select the size of the puzzle to play:`/*A prompt on top of each screen*/
             });
 
+            function reset(){
+                setState({
+                    ...state,
+                    n:0,
+                    total: 0,
+                    mines:[],
+                    display:[],
+                    interval:"button",
+                    cell_class:[],
+                    max_row: 10,
+                    left:100,
+                    game:false,
+                    end: false,
+                    title:`Please select the size of the puzzle to play:`
+                })
+            }
+
             function initialgame(){
                 var row = document.getElementById("n").value;
                 var arr = [];
@@ -108,6 +128,7 @@
                 })
 
             }
+
 
             function startgame(){
                 var arr = [];
@@ -161,6 +182,8 @@
                 return (
                     <div>
                         <label class="prompt">{state.title}</label>
+                        <br/>
+                        <button class="button" onClick={reset}>Try again</button>
                     </div>
                 )
             }
