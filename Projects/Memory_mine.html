@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .custom-container {
+            display: flex;
+            justify-content: center;
+            width: 75%;
+            padding:50px;
+            align-items:center;
+        }
+        .color-cell {
+            width: 60px; /* Adjust the width and height as needed */
+            height: 60px;
+            border: 5px solid black;
+            background-color:rgb(136, 134, 132);
+            text-align:center;
+        }
+        .visited-cell {
+            width: 60px; /* Adjust the width and height as needed */
+            height: 60px;
+            border: 5px solid black;
+            background-color:rgb(52, 196, 39);
+            text-align:center;            
+        }
+        .color-cell:hover {
+            background-color:gray;
+        }
+        .button {
+            display: block;
+            background-color: rgb(70, 104, 197);
+            color:rgb(255, 255, 255);
+            margin-left:200px;
+        }
+        .button-hide {
+            display:none;
+        }
+        .prompt {
+            font-size: 25px;
+            color:rgb(19, 82, 45);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="custom-container">
+            <div id="Start">
+            </div>
+        </div>
+    </div>
+    
+    <script  type="text/babel">
+        function App(){
+            const [state,setState]= React.useState({
+                n: 0,/*Number of rows for the game matrix */
+                total: 0,/*total number of mines generated.*/
+                mines: [], /*An array to save the nature of each cell, either "Mine" or ""*/
+                display:[],/*An array to save the display of each cell, initially either "Mine" or "", then change all to ""*/
+                interval: "button",/*Determine if the recognization game has started, also used to hide the button*/
+                cell_class:[],/* An array to save the class of each cell, either unvisited or visited*/
+                max_row: 10,
+                left: 100,/*Record the number of safe cells that has yet to discover. Used to decide if Victory condition is met*/
+                game: false,/*Whether to render start page or not*/
+                end: false,/*Whether to render end page or not*/
+                title: `Please select the size of the puzzle to play:`/*A prompt on top of each screen*/
+            });
+
+            function initialgame(){
+                var row = document.getElementById("n").value;
+                var arr = [];
+                var classes = [];
+                var count = 0;
+                var safe = 0;
+                for (var i = 0; i < row* row; i++){
+                    var cur = Math.round(Math.random());
+                    count += cur;
+                    classes.push("color-cell");
+                    if (cur === 1){
+                        arr.push("Mine");                        
+                    }
+                    else{
+                        arr.push("");
+                    }
+                    
+                }
+                safe = row * row - count;
+                console.log(arr);
+                setState({
+                    ...state,
+                    n: row,
+                    total:count,
+                    mines: arr,
+                    display:arr,
+                    cell_class: classes,
+                    left: safe,
+                    game: true,
+                    title: `Please memorize the location of mines:` 
+                })
+
+            }
+
+            function startgame(){
+                var arr = [];
+                var row = state.n;
+                for (var i = 0; i < row* row; i++){
+                        arr.push("");
+                }
+                setState({
+                    ...state,
+                    interval:"button-hide",
+                    display: arr,
+                    title:`Please click on all safe cells. There are ${state.left} left.`
+                })
+            }
+
+            function score(event){
+                var index = parseInt(event.target.id);
+                if (state.interval === "button-hide" & state.cell_class[index] !== "visited-cell"){
+                    console.log(state.left)
+                    state.cell_class[index]='visited-cell';
+                    setState({
+                        ...state,
+                        left: state.left - 1,
+                        title:`Please click on all safe cells. There are ${state.left - 1} left.`
+                    })
+                    console.log('correct')
+                    if (state.left === 1){
+                        setState({
+                            ...state,
+                            end:true,
+                            title:`You Won!`
+                        })
+                    }
+                }
+            }
+
+            function doom(event){
+                var index = parseInt(event.target.id);
+                console.log(state.mines[index]);
+                if (state.interval === "button-hide"){
+                    console.log('wrong')
+                    setState({
+                        ...state,
+                        end:true,
+                        title:'You stepped on mine.'
+                    })
+                }
+            }
+
+            function renderEndScreen(){
+                return (
+                    <div>
+                        <label class="prompt">{state.title}</label>
+                    </div>
+                )
+            }
+
+            function renderpuzzleScreen(){                
+                const tablerows = [];
+                for (let i = 0; i < state.n; i++){
+                    const cells =[];
+                    for (let j = 0; j < state.n; j++){
+                        if (state.mines[i * state.n + j] === "Mine"){
+                            cells.push(<td class= {state.cell_class[i*state.n + j]} id={i*state.n + j} onClick={doom}>{state.display[i*state.n +j]}</td>);
+                        }
+                        else{
+                            cells.push(<td class={state.cell_class[i*state.n + j]} id={i*state.n + j} onClick={score}>{state.display[i*state.n +j]}</td>);
+                        }
+                    }
+                    tablerows.push(<tr>{cells}</tr>)
+                }
+                return (
+                    <div>
+                        <label class="prompt">{state.title}</label>
+                        <table>                        
+                        {tablerows}
+                        </table>
+                        <button class={state.interval} onClick={startgame}>I'm Ready</button>
+                    </div>
+                )
+            }
+
+
+            function renderStartScreen(){
+                const options = [];
+                for (let i = 3; i <= state.max_row; i++){
+                    options.push(<option value={i}>{i} X {i}</option>)
+                }
+                return (
+                    <div>
+                        <label class="prompt">{state.title}</label>
+                        <select id="n" value={state.selectedValue}>
+                            {options}
+                        </select><br/>
+                        <button onClick={initialgame} class="button">Start Game</button>
+                    </div>
+                )
+            }
+            
+            if (state.game === false){
+                return renderStartScreen();
+            }
+            else{
+                if (state.end === true){
+                    return renderEndScreen();
+                }
+                else{
+                    return renderpuzzleScreen();
+                }
+            }
+        }
+         ReactDOM.render(<App/>, document.querySelector('#Start'));
+    </script>
+    
+</body>
+</html>
