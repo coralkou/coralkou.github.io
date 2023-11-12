@@ -97,6 +97,7 @@
                 begin:"button",/*Determine if I'm done select and wants to begin */
                 shuffle:"button-hide",/* Determine if the shuffle button needs to be shown*/
                 again: "button-hide", /* Determine if wants to play again. */
+                swap:"button-hide", /*It can only be used once */
                 fit : 0, /* Winning condition */
                 steps: 0,/*Record the number of steps moved */
                 win: false ,/* Whether the game is ended or not*/
@@ -114,6 +115,7 @@
                     begin:"button",
                     shuffle:"button-hide",
                     again: "button-hide",
+                    swap:"button-hide",
                     fit: 0,
                     steps: 0,
                     win: false ,
@@ -166,6 +168,7 @@
                     ...state,
                     fit: fitted,
                     display:displays,
+                    swap:"button-hide",
                     cell_class:cell_classes,
                     steps: step,
                 });
@@ -183,6 +186,7 @@
                     setState({
                         ...state,
                         shuffle:"button-hide",
+                        swap:"button-hide",
                         again: "button",
                         win: true,
                         steps: step,
@@ -244,6 +248,7 @@
                     begin:"button-hide",
                     shuffle:"button",
                     again:"button-hide",
+                    swap:"button",
                     fit: fitted,            
                     steps: 0,
                     win: false,
@@ -266,6 +271,7 @@
                         ...state,
                         shuffle:"button-hide",
                         again: "button",
+                        swap:"button-hide",
                         win: true,
                         steps: step,
                         title: "Congratulations, you win with " + step + " steps!"
@@ -332,6 +338,7 @@
                                     ...state,
                                     shuffle:"button-hide",
                                     again: "button",
+                                    swap:"button-hide",
                                     win: true,
                                     steps: step,
                                     title: "Congratulations, you win with " + step + " steps!"
@@ -358,7 +365,7 @@
                     <div class="custom-container">
                         <p class="prompt">{state.title}</p>
                         <p>{state.steps} steps <div class="record">Record: {state.prev_record}</div></p>                        
-                        <button class={state.shuffle} onClick={swap}>Swap</button>                        
+                        <button class={state.swap} onClick={swap}>Swap X 1</button>                        
                         <table>                        
                         {tablerows}
                         </table>
