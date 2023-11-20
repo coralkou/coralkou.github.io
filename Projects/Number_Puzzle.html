@@ -200,13 +200,14 @@
                 console.log('run shuffle');
                 if (state.n === 0){
                     var row = document.getElementById("n").value;
-                    var record = 'record_'+ String(row)
+                    var record = 'record_'+ String(row);
                     if (!localStorage.getItem(record)) {
                         localStorage.setItem(record, '???');
                     }
                 }
                 else {
                     var row = state.n;
+                    var record = 'record_'+ String(row);
                 }
                 var prev_record = localStorage.getItem(record);
                 var cells = [];
@@ -359,7 +360,7 @@
                         cells.push(<td class= {state.cell_class[index]} id={index} onClick={move}>{state.display[index]}</td>);
                         index++;                        
                     }
-                    tablerows.push(<tr>{cells}</tr>)
+                    tablerows.push(<tr>{cells}</tr>);
                 }
                 return (
                     <div class="custom-container">
@@ -373,14 +374,14 @@
                         <button class={state.shuffle} onClick={shuffle}>Shuffle</button>
                         <button class={state.again} onClick={start}>Replay</button>
                     </div>
-                )
+                );
             }
 
 
             function renderStartScreen(){
                 const options = [];
                 for (let i = 2; i <= 9; i++){
-                    options.push(<option value={i}>{i} X {i}</option>)
+                    options.push(<option value={i}>{i} X {i}</option>);
                 }
                 return (
                     <div class="custom-container">
@@ -390,7 +391,7 @@
                         </select><br/>
                         <button onClick={shuffle} class="button">Let's begin</button>
                     </div>
-                )
+                );
             }
             
             if (state.begin === "button"){

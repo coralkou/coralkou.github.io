@@ -1,167 +1,153 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-        <link href="styles.css" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="UTF-8">
-        <meta name="description" content="Carol Kou's resume">
-        <meta name="keywords" content="Resume, Skills, Education, Work, Experience, Projects, Courses">
-        <meta name="author" content="Carol Kou">
-        <title>Resume</title>
-        <style>            
-            header {
-              flex-basis: 100%;
-              background-color: #6495ED;
-              color: #fff;
-              padding: 10px;
-              text-align: center;
-            }
-            
-            .container {
-              margin: 0 auto;
-              padding: 10px;
-              display: flex;
-            }
-            
-            .left-column {
-              flex-basis: 25%;
-              padding-right: 10px;
-              text-align: right;
-            }
-            
-            .right-column {
-              flex-basis: 75%;
-              padding-left: 10px;
-            }
-        
-            .separation-line {
-            width: 1px;
-            background-color: #181717;
-            }
-          </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 1;
+    }
+    
+    header {
+      background-color: #6495ED;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+      display: flex;
+    }
+    
+    .left-column {
+      flex-basis: 25%;
+      padding-right: 10px;
+      text-align: right;
+    }
+    
+    .right-column {
+      flex-basis: 75%;
+      padding-left: 10px;
+    }
+
+    .separation-line {
+    width: 1px;
+    background-color: #181717;
+    }
+  </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-        <a class="navbar-brand" href="index.html">Homepage</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href = "resume.html">Resume</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href = "projects.html">Projects</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href = "blog.html">Blog</a>
-            </li>
-        </ul>
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href = "tools.html">Misc</a>
-            </li>
-        </ul>
-        </div>
-    </nav>
-
-    <header>
-        <h1 style="font-size:32px;"><u>Xiaolu 'Carol' Kou</u></h1>
-        <h2>Software Developer</h2>
-    </header>
-      
-    <div class="container">
-        <div class="left-column">
-            <h2>CONTACT</h2>
-            <pre style="font-size:16px;font-family:Arial, sans-serif;">xiaolukou@g.ucla.edu <img src="icons/email.png"  width="15">
-              (310)-994-3385 <img src="icons/smartphone.png"  width="15">
-              San Jose, CA <img src="icons/location.png"  width="15">
-              <a href='http://coralkou.github.io'>Github page </a><img src="icons/github.png"  width="15">
-              <a href='http://www.linkedin.com/in/xiaolu-carol-kou-05519334'> linkedin </a><img src="icons/linkedin.png"  width="15">
-              <a href='https://leetcode.com/CarolKOU/'>Leetcode </a><img src="icons/leetcode.png"  width="15">
-            </pre>
-          
-            <h2 >OBJECTIVE</h2>
-            <p style="font-size:14px;font-family:Verdana;">As a senior member of an engineering group, I have personally witnessed the productivity boost by taking lead or involved in various software developments. Eager to apply my strong problem-solving abilities, attention to detail, and collaboration skills to create impactful and innovative software solutions.</p>
-    
-    
-            <h2>EDUCATION</h2>
-            <pre style="font-size:14px;font-family:Verdana;"><b>Graduate certificate</b>
-                Data Mining and Applications
-                Stanford, 2022
-                Palo Alto, CA
-             </pre>
-            <pre style="font-size:14px;font-family:Verdana;"><b>Ph.D.</b> and <b>M.S.</b>
-               Material Sci. & Eng.
-               UCLA, 2014
-               Los Angeles, CA
-            </pre>
-            <pre style="font-size:14px;font-family:Verdana;"><b>B.S.</b>
-               Electrical Engineering
-               Nankai Univ., 2009
-               Tianjin, China
-            </pre>
-    
-            <h2>SKILLS</h2>
-            <p><b>Language</b>: Python, C, SQL, Java, R, HTML, JavaScript, CSS, JSL</p>
-            <p><b>Tools</b>: Django, Flask, Git, Pytorch, Boorstrap, React, Node.js, Microsoft SQL Server, PostgreSQL, Selemium, TCP/IP</p>
-    
-            <h2>CERTIFICATES</h2>
-            <p style="font-size:16px;font-family: Arial, sans-serif;"><b>Harvard CS50 series,</b>
-                in progress
-            </p>
-            <p style="font-size:16px;font-family: Arial, sans-serif;"><b>Stanford Algorithms,</b>
-                Coursera (2021)
-            </p>
-            <p style="font-size:16px;font-family: Arial, sans-serif;"><b>Six Sigma Brown Belt,</b>
-                Seagate (2015)
-            </p>
-        </div>
-
-        <div class="separation-line"></div>
-        
-        <div class="right-column">
-            <h2>WORK EXPERIENCE</h2>
-
-            <h3><u>Technologist</u></h3>
-            <h3>Western Digital <img src="icons/WD.png"  width="25"></h3>
-            <p>Nov 2017 &#45 current / Fremont, CA</p>
-            <ul>
-                <li>Facilitated company-wide image search and machine learning capabilities for local data by seamlessly integrating local storage with our in-house <b>Big Data Platform</b>, comprising cloud storage (AWS), edge search functionality, APIs, and a web application.</li>
-                <li>Led the development of an <b>in-house laboratory request system</b> by collaborating closely with the local IT team. Responsible for designing, testing, and training of users.</li>
-                <li>Dynamically oversaw team resource allocation through the creation of an <b>operation statistics dashboard</b>, utilizing DBMS and scripting.</li>
-                <li>Transformed physical Failure Analysis (pFA) procedures by developing automation recipes and integrating scripts to <b>streamline and automate manual tasks</b> throughout data acquisition, analysis, and reporting, resulting in an impressive 66% reduction in workload hours.</li>
-                <li>Enhanced the efficiency and consistency of Failure Analysis (FA) insights by substituting manual inspection with classification achieved through <b>Convolutional Neural Network</b> (CNN) technology. </li>
-            </ul>
-            <br>
-            <h3><u>Sr. Engineer</u></h3>
-            <h3>Seagate Technology <img src="icons/Seagate.png"  width="25"></h3>
-            <p>Feb 2015 &#45 Nov 2017 / Bloomington, MN</p>
-            <ul>
-                <li>Doubled R&D product lifetime by conducting in-depth failure analysis to uncover root causes and providing valuable feedback for new Design of Experiments (DOEs). </li>
-                <li>Elevated on-time wafer delivery rate from 70% to 98% by effectively harnessing group resources and proactive communication with customers as the primary point of contact.</li>
-            </ul>
-            <br>
-            <h2>PROJECTS</h2>
-
-            <h4><u>Auction site</u></h4>
-            <p>Sep 2023/Harvard CS50W project</p>
-            <ul style="list-style-type:square">
-                <li>Built an e-commerce auction site, enabling authenticated users to create listings, place bids, manage watchlists, and engage in listing discussions. Leveraging <b>Django</b>'s Object-Relational Mapping system, each page dynamically adjusts its content by querying <b>Models</b> as Python class objects and displaying relevant results.</li>
-            </ul>
-
-            <h4><u>Stock transaction website</u></h4>
-            <p>Mar 2023/Harvard CS50X project</p>
-            <ul style="list-style-type:square">
-                <li>Implemented a website that allows registered users to query real-time stock price through 3rd party <b>API</b> and make virtual transactions by managing the <b>SQL database</b> under <b>Flask</b>.</li>
-            </ul>
-
-            
-        </div>
+  <header>
+    <h1 style="font-size:32px;"><u>Xiaolu 'Carol' Kou</u></h1>
+    <div style = "width:90%;margin-left:5%;text-align:left;" >
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;7 + years project lead experience in high tech industry, actively involved in the agile testing-design
+      feedback loop. Focused on data excellence and effective collaboration to improve product reliability.
+      Self-motivated to continuously integrate new technology into regular tasks to maximize capital
+      utilization, boost data delivery efficiency and enhance data consistency.</p>
     </div>
+  </header>
+  
+  <div class="container">
+    <div class="left-column">
+      <h2>CONTACT</h2>
+      <pre style="font-size:16px;font-family: Arial, sans-serif;">xiaolukou@g.ucla.edu <img src="icons/email.png"  width="15">
+          (310)-994-3385 <img src="icons/smartphone.png"  width="15">
+          San Jose, CA <img src="icons/location.png"  width="15">
+          <a href='http://coralkou.github.io'>Github page </a><img src="icons/github.png"  width="15">
+          <a href='http://www.linkedin.com/in/xiaolu-carol-kou-05519334'> linkedin </a><img src="icons/linkedin.png"  width="15">
+          <a href='https://leetcode.com/CarolKOU/'>Leetcode </a><img src="icons/leetcode.png"  width="15"></pre>
+      
+      <h2 >OBJECTIVE</h2>
+      <p style="font-size:14px;font-family:Verdana;">After witnessing the significant productivity boost by software integration into work, I am looking for opportunities to become a full time software developer, where I can apply my strong problem-solving abilities, attention to detail, and collaboration skills to create impactful and innovative software solutions.</p>
+
+
+      <h2>EDUCATION</h2>
+      <pre style="font-size:14px;font-family:Verdana;"><b>Graduate Certificate</b>
+        Data Mining and application
+        Stanford, 2020
+        Palo Alto, CA</pre>
+      
+      <pre style="font-size:14px;font-family:Verdana;"><b>Ph.D.</b>
+           Material Sci. & Eng.
+           UCLA, 2014
+           Los Angeles, CA</pre>
+
+      <pre style="font-size:14px;font-family:Verdana;"><b>B.S.</b>
+           Electrical Engineering
+           Nankai Univ., 2009
+           Tianjin, China</pre>
+
+
+
+      <h2>PROFESSIONAL DEVELOPMENT</h2>
+      <pre style="font-size:16px;font-family: Arial, sans-serif;"><b>AWS Cloud Practitioner</b>
+        AWS training(2023)</pre>
+      <pre style="font-size:16px;font-family: Arial, sans-serif;"><b>Harvard CS50X/CS50W</b>
+        EDX(2023)</pre>
+      <pre style="font-size:16px;font-family: Arial, sans-serif;"><b>Stanford Algorithms Specialization</b>
+        Coursera(2022)</pre>
+      <pre style="font-size:16px;font-family: Arial, sans-serif;"><b>Stanford Machine Learning</b>
+        Coursera(2017)</pre>
+      <pre style="font-size:16px;font-family: Arial, sans-serif;"><b>Six Sigma Brown Belt,</b>
+        Seagate (2015)</pre>
+    </div>
+    <div class="separation-line"></div>
+    
+    <div class="right-column">
+      <h2>WORK EXPERIENCE</h2>
+      <h3><img src="icons/WD.png"  width="25"> Western Digital, <span style="font-weight: normal;font-size: smaller;"> Fremont CA</span></h3>
+      <p><b>Technologist</b>, July 2021 &#45 current</p>      
+      <p style = "text-align:left;">&nbsp;&nbsp;&nbsp;&nbsp;Key responsibilities encompass delivering feedback from failure analysis to internal design, process, and testing
+        teams to advance future product reliability. Additionally, charged with maximizing team productivity through training,
+        flexible scheduling, and effective communication.</p>
+      <ul>
+        <li>Enabled company-wide fast search and machine learning capabilities for > 3 PB microscopic images by seamlessly
+          integrating local storage with in-house Big Data Platform, comprising cloud storage (AWS S3), PostgreSQL for
+          metadata, ElasticSearch®, RESTful APIs, and a user-friendly web application.</li>
+        <li>Led the deployment of a newly designed Lab Information Management System into production with in-house IT
+          team to retire the outdated system. The new system features user groups, automatic backup, Spotfire report
+          generation for ease of use and data security.</li>
+        <li>Developed machine learning models to identify the view angle and failure modes in microscopic images to increase
+          data search efficiency and reduce the risk of inconsistent labeling through manual inspections.</li>
+      </ul>
+      <p><b>Principle Engineer</b>, Nov 2017 &#45 July 2021</p>      
+      <ul>
+        <li>Managed the SQL database for analysis request system and oversaw team resource allocation through the
+          self-written dashboard for operational statistics and data visualization.</li>
+        <li>LAutomated 80% Physical Failure Analysis procedures by developing automation recipes and converting manual
+          tasks into streamlined scripts. Realized a threefold boost in throughput aligning with rising volume for product
+          manufacturing and testing.</li>
+      </ul>
+
+      <h3><img src="icons/Seagate.png"  width="25"> Seagate Technology, <span style="font-weight: normal;font-size: smaller;">Bloomington, MN</span></h3>
+      <p><b>Sr. Engineer</b>Feb 2015 &#45 Nov 2017</p>
+      <ul>
+        <li>Provided in-depth failure analysis for various wafer and component level devices and advice on new DOEs.</li>
+        <li>Standardized workflow for advanced analysis requests to achieve on-time delivery from 70% to 98%.</li>
+      </ul>
+      <br>
+      <h2>FULLSTACK PROJECTS</h2>
+      <ul>
+        <li>Mail: An email server with Django frame. Incorporated JavaScript to perform internal API calls to read or update
+          the database models, and manipulate web page content through the DOM.</li>
+        <li>Numpuz game: An interactive web application on a standalone webpage, leveraging React, Babel, JavaScript, and
+          CSS to implement both the game settings and tile movements.</li>
+        <li>E-commerce: A dynamic auction platform resembling eBay using Django, where users can create listings, place
+          bids, manage watchlists, and engage in listing discussions through Python scripts, HTML templates and HTTP Response.</li>
+        <li>Stock transaction: A website that allows real-time stock price query through an API, make virtual transactions, and
+          render html contents by managing the SQL database through Python scripts under Flask.</li>
+      </ul>
+
+      <h2>SKILLS</h2>
+      <p><b>Language & Tools:</b>: Python, C, SQL, JavaScript, R, HTML, CSS, JMP, Git, Django, Flask, Spotfire, Bootstrap, Microsoft SQL</p>
+      <p><b>Others:</b>Database management, Failure Analysis, Process automation, Data Mining and Data Analysis
+    </div>
+  </div>
 </body>
 </html>
