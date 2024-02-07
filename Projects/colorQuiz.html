@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Quiz</title>
+    <style>
+        #theme {
+            font-size: 68px;
+            font-weight: 700;
+            text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5)
+        }
+        .container {
+            margin-left: 20%;
+            margin-right:20%;
+            align-items: center; /* Center children horizontally */
+            justify-content: center; /* Center children vertically */
+            background-color: #fff;
+            text-align: center; /* Center text within the container */
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+        // Add an event listener for the "click" event
+            document.addEventListener("click", () => next());
+        });
+        function next(){
+            //console.log("next got clicked");
+            var theme = document.getElementById("theme");
+            var themes = ["Yellow", "Blue", "Green", "Red", "Purple", "Black", "Gray", "White", "Brown", "Pink", "Orange"];
+            var colors = ['red', 'green', 'blue', 'yellow', 'orange', 'purple', 'pink', 'cyan', 'black', 'white', 'gray', 'brown'];
+            var randomIndex = Math.floor(Math.random() * themes.length);
+            var randomColorIndex = Math.floor(Math.random() * colors.length);
+            //console.log("text is chosen");
+            //console.log("color is chosen" + colors[randomColorIndex]);
+            theme.innerHTML = themes[randomIndex];
+            theme.style.color = colors[randomColorIndex];
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <section>
+            <h1>Please tell the color of the text:</h1>
+        </section>
+
+        <section>
+            <p id="theme">Click Anywhere to Start!</p>
+        </section>
+
+    </div>
+</body>
+</html>
